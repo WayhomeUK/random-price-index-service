@@ -31,8 +31,8 @@ async def wrpi(request):
     value = await request.app['redis'].get('wrpi-latest')
     timestamp = await request.app['redis'].get('wrpi-timestamp')
     return web.json_response({
-        'value': float(value.decode()),
-        'timestamp': timestamp.decode(),
+        'latest_value': float(value.decode()),
+        'latest_calculation_at': timestamp.decode(),
     })
 
 
