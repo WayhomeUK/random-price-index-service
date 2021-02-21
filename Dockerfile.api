@@ -3,4 +3,4 @@ WORKDIR /app
 COPY requirements-api.txt .
 RUN pip install -r requirements-api.txt
 COPY api.py .
-CMD ['python', 'api.py']
+CMD ["python", "api.py"]
