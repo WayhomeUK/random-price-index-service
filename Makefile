@@ -1,4 +1,4 @@
-DOCKER_REPO=docker.pkg.github.com/wayhomeuk/random-price-index-service
+DOCKER_REPO=ghcr.io/wayhomeuk/random-price-index-service
 
 build:
 	docker build -f Dockerfile.updater --tag ${DOCKER_REPO}/updater:latest .
