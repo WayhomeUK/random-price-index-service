@@ -110,7 +110,12 @@ Docker
 ------
 
 The backend team have already packaged the two applications into docker images
-for you. You can find them attached to this github repository.
+for you. You can find them attached to this github repository, or you can pull
+the images directly using the URI's below.
+
+ghcr.io/wayhomeuk/random-price-index-service/updater:latest
+ghcr.io/wayhomeuk/random-price-index-service/api:latest
+
 
 Things that we would like to see
 --------------------------------
