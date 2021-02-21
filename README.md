@@ -140,3 +140,5 @@ want to show off and for us to virtue signal.
 * Monitoring and alerts.
 * DNS and SSL for the API endpoint.
 * Resource requests and limits.
+* RBACs, IAM, permissions etc
+* Networking magic (VPN, VPC, firewalls, etc)
