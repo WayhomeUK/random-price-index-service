@@ -98,7 +98,7 @@ Connecting via IP address is fine, the API doesn't need to be secured by SSL.
 The application takes the following configuration as environmental variables:
 
 * `REDIS_HOST`: host for the redis database, defaults to `localhost`
-* `REDIS_DB`: the number of the database to connect to, defaults to `1`
+* `REDIS_DB`: the number of the database to connect to, defaults to `0`
 * `REDIS_PASS`: password for the redis database, default to a blank string (or
   in other words: no password)
 * `REDIS_PORT`: port for the redis database, defaults to `6379`
