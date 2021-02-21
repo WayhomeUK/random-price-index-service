@@ -1,0 +1,6 @@
+FROM python:3.8-slim
+WORKDIR /app
+COPY requirements-updater.txt .
+RUN pip install -r requirements-updater.txt
+COPY updater.py .
+CMD ['python', 'updater.py']
