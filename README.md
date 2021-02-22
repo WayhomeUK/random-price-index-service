@@ -134,8 +134,9 @@ Stretch Goals
 -------------
 
 Don't feel like you need to go after any of these, providing a solution to the
-above will be enough for us to make an assessment, this is for people that
-want to show off and for us to virtue signal.
+above will be enough for us to make an assessment. If you have time to kill
+and/or want to show off a bit, these are the things that we are interested in
+seeing.
 
 * Monitoring and alerts.
 * DNS and SSL for the API endpoint.
