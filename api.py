@@ -12,6 +12,15 @@ REDIS_PASS = os.getenv('REDIS_PASS', None)
 APP_PASSWORD = os.getenv('APP_PASSWORD', None)
 
 
+async def index(request):
+    return web.json_response({
+        'routes': [
+            '/v0/wrpi'
+        ],
+        'description': 'randomising important numbers since 2021',
+    })
+
+
 async def wrpi(request):
     error_response = web.json_response({
         'error': 'please authenticate to use this API',
@@ -58,6 +67,7 @@ if __name__ == '__main__':
     structlog.configure(processors=[structlog.processors.JSONRenderer()])
 
     app = web.Application()
+    app.router.add_get('/', index)
     app.router.add_get('/v0/wrpi', wrpi)
     app.on_startup.append(redis_up)
     app.on_cleanup.append(redis_down)
